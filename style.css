@@ -46,13 +46,112 @@ a {
     align-items: center;
 }
 
+.nav a:hover {
+    background-color: rgba(72, 145, 255, 0.5);
+}
+
 .heading {
     background-color: #f9fafb;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 #searchField {
-    
+    height: 45px;
+    border-radius: 25px;
+    width: max(250px, 75%);
+    padding: 10px;
+    border: none;
+    background-color: #c4c7cd;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.search {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: .1fr 5fr 1fr 1fr;
+    align-items: center;
+    gap: 20px
+}
+
+.search button{
+    outline: none;
+    border: none;
+    background-color:#f9fafb;
+    height: 35px;
+    cursor: pointer;
+    justify-self: end;
+}
+
+
+
+
+
+input::placeholder {
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell {
+    justify-self: end;
+    height: 35px;
+}
+
+.pr {
+    height: 70px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.profile:hover, .bell:hover {
+    cursor: pointer;
+}
+
+.sub-head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.subpr {
+    height: 150px;
+    border-radius: 50%;
+    border: black 2px solid;
+}
+
+.btn {
+    background-color: #1f2937;
+    color: white;
+    font-weight: 900;
+    padding: 25px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.intro {
+    justify-self: left;
 }
